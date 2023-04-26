@@ -44,3 +44,31 @@ int main() {
     
     return 0;
 }
+```
+## Sample Usage and Output
+
+```c
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array:\n");
+    print_array(arr, n);
+
+    bubble_sort(arr, n);
+
+    printf("Sorted array:\n");
+    print_array(arr, n);
+
+    return 0;
+}
+```
+When you run the program with the sample usage above, the output should look like
+
+```c
+Original array:
+64 34 25 12 22 11 90
+Sorted array:
+11 12 22 25 34 64 90
+```
+
